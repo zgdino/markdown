@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+// importing React Markdown
 import ReactMarkdown from 'react-markdown'
 
 function App() {
@@ -9,10 +10,11 @@ function App() {
         <textarea
           className='input'
           value={markdown}
+          // invoke markdown change
           onChange={(e) => setMarkdown(e.target.value)}
         ></textarea>
         <article className="result">
-          <ReactMarkdown>{markdown }</ReactMarkdown>
+          <ReactMarkdown>{markdown}</ReactMarkdown>
         </article>
       </section>
     </main>
